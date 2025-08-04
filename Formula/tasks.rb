@@ -4,7 +4,6 @@ class Tasks < Formula
   version "2.3.3"
   license "MIT"
 
-
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/vrischmann/tasks/releases/download/v2.3.3/tasks_2.3.3_darwin_amd64.tar.gz"
