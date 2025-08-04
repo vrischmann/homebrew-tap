@@ -1,15 +1,15 @@
 class Tasks < Formula
   desc "Stateless CLI tool for managing markdown task lists with Unix-friendly commands"
   homepage "https://github.com/vrischmann/tasks"
-  version "2.2.4"
+  version "2.2.5"
   license "MIT"
 
   if Hardware::CPU.intel?
-    url "https://github.com/vrischmann/tasks/releases/download/v2.2.4/tasks_2.2.4_darwin_amd64.tar.gz"
-    sha256 "8b86aab750a0dd2426cf151c33a0aa7a5e713d94cd9e4b61a1f3c5764ffa942b"
+    url "https://github.com/vrischmann/tasks/releases/download/v2.2.5/tasks_2.2.5_darwin_amd64.tar.gz"
+    sha256 "be526057604b93ef0cae181cd5651831ad3ed7098cc30316d16f6f32a2d04d9d"
   else
-    url "https://github.com/vrischmann/tasks/releases/download/v2.2.4/tasks_2.2.4_darwin_arm64.tar.gz"
-    sha256 "008249b98eb63f587389e367c274f66559cd19304a2399ddd8881d4da7663a6b"
+    url "https://github.com/vrischmann/tasks/releases/download/v2.2.5/tasks_2.2.5_darwin_arm64.tar.gz"
+    sha256 "84f8e1126d0b0909ff235f833032413d63cd9f19b190ef9f8e9b0fc201ba301b"
   end
 
   def install
