@@ -1,5 +1,3 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
 class Tasks < Formula
   desc "Stateless CLI tool for managing markdown task lists with Unix-friendly commands"
   homepage "https://github.com/vrischmann/tasks"
