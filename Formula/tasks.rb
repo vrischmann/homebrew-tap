@@ -1,26 +1,26 @@
 class Tasks < Formula
   desc "Stateless CLI tool for managing markdown task lists with Unix-friendly commands"
   homepage "https://github.com/vrischmann/tasks"
-  version "2.3.8"
+  version "2.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vrischmann/tasks/releases/download/v2.3.8/tasks_2.3.8_darwin_amd64.tar.gz"
-      sha256 "f9c2ca2b6670a0f227e5756a1259b8fd59f7b6f86acbd5667bdef04ae4ff623e"
+      url "https://github.com/vrischmann/tasks/releases/download/v2.4.0/tasks_2.4.0_darwin_amd64.tar.gz"
+      sha256 "e7aee0595556b3cdfed80389da2f0da050bb2d89b7cb913c677680a6d4a157e1"
     else
-      url "https://github.com/vrischmann/tasks/releases/download/v2.3.8/tasks_2.3.8_darwin_arm64.tar.gz"
-      sha256 "c1598e5c8f9d21be3bdc54f8485937e176d444ddda85804f75b06b588c7fbc04"
+      url "https://github.com/vrischmann/tasks/releases/download/v2.4.0/tasks_2.4.0_darwin_arm64.tar.gz"
+      sha256 "0a9e04cf14d9077004d4998735e3b9034f99a4f5f32c44a0b9506b98b6c00d2f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/vrischmann/tasks/releases/download/v2.3.8/tasks_2.3.8_linux_amd64.tar.gz"
-      sha256 "4bed5d583e03d4ee7392e5b3b2fe3e83abafdae61faed343e0e4193cf862e1dd"
+      url "https://github.com/vrischmann/tasks/releases/download/v2.4.0/tasks_2.4.0_linux_amd64.tar.gz"
+      sha256 "8f8c4c3baed1881d14f7e84539e4583af67f3afe80cf7793ceb3f973d49be15d"
     elsif Hardware::CPU.arm?
-      url "https://github.com/vrischmann/tasks/releases/download/v2.3.8/tasks_2.3.8_linux_arm64.tar.gz"
-      sha256 "3a35eace3f967f208772ddc6211107c461afa8a7e2d73ef25af09068b9b59929"
+      url "https://github.com/vrischmann/tasks/releases/download/v2.4.0/tasks_2.4.0_linux_arm64.tar.gz"
+      sha256 "4912654cca3a8438da3660a2611f2ccf8641cca3ec7b547bba70d70993397bd6"
     end
   end
 
