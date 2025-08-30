@@ -28,6 +28,7 @@ class Tasks < Formula
     bin.install "tasks"
 
     fish_function.install Dir["fish/functions/*.fish"]
+    fish_completion.install Dir["fish/completions/*.fish"]
   end
 
   test do
