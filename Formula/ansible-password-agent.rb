@@ -20,7 +20,7 @@ class AnsiblePasswordAgent < Formula
 
   def install
     bin.install "ansible-password-agent"
-    (share/"fish/vendor_conf.d").install "ansible-password-agent.fish"
+    (share/"fish/vendor_functions.d").install "ansible-password-agent.fish"
   end
 
   test do
