@@ -1,7 +1,6 @@
 class AnsiblePasswordAgent < Formula
   desc "Secure credential provider for Ansible vault and become passwords"
   homepage "https://github.com/vrischmann/mytools"
-  version "2.0.6"
   license "MIT"
 
   if OS.mac?
