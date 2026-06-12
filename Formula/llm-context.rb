@@ -1,26 +1,21 @@
 class LlmContext < Formula
-  desc "CLI tool for gathering file contents into formatted messages for LLM conversations"
+  desc "Gather file contents into formatted messages for LLM conversations"
   homepage "https://github.com/vrischmann/llm-context"
   version "0.1.0"
+  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
   license "MIT"
 
-  on_macos do
+  if OS.mac?
     if Hardware::CPU.intel?
       url "https://github.com/vrischmann/llm-context/releases/download/v0.1.0/llm-context_0.1.0_darwin_amd64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
     else
       url "https://github.com/vrischmann/llm-context/releases/download/v0.1.0/llm-context_0.1.0_darwin_arm64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
     end
-  end
-
-  on_linux do
+  elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/vrischmann/llm-context/releases/download/v0.1.0/llm-context_0.1.0_linux_amd64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
     elsif Hardware::CPU.arm?
       url "https://github.com/vrischmann/llm-context/releases/download/v0.1.0/llm-context_0.1.0_linux_arm64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
     end
   end
 
