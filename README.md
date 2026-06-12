@@ -33,7 +33,7 @@ brew "<formula>"
 
 This tap uses Homebrew's standard CI workflows:
 
-- **`brew test-bot`** runs on every push to `main` and on pull requests (Ubuntu 22.04, macOS 13, macOS 15). It checks formula syntax and, on PRs, runs the full test suite.
+- **`brew test-bot`** runs on every push to `main` and on pull requests (`ubuntu-latest`, `macos-latest`). It checks formula syntax and, on PRs, runs the full test suite.
 - **`brew pr-pull`** publishes bottled binaries when a PR is labeled `pr-pull`.
 
 ## Documentation

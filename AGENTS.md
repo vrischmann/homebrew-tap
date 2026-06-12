@@ -17,6 +17,7 @@ The repository follows the standard Homebrew tap layout: one Ruby file per formu
 │   └── workflows/
 │       ├── tests.yml      # brew test-bot on push/PR
 │       └── publish.yml    # brew pr-pull for bottle publishing
+├── AGENTS.md
 └── README.md
 ```
 
@@ -62,7 +63,7 @@ Runs on:
 - Pull requests
 - Manual dispatch (`workflow_dispatch`)
 
-Matrix: `ubuntu-22.04`, `macos-13`, `macos-15`.
+Matrix: `ubuntu-latest`, `macos-latest`.
 
 Steps:
 1. Sets up Homebrew with the GitHub token.
