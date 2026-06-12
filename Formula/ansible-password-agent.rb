@@ -1,16 +1,16 @@
 class AnsiblePasswordAgent < Formula
   desc "Secure credential provider for Ansible vault and become passwords"
   homepage "https://github.com/vrischmann/mytools"
-  version "1.0.5"
+  version "2.0.6"
   license "MIT"
 
   if OS.mac?
-    url "https://github.com/vrischmann/mytools/releases/download/v1.0.5/ansible-password-agent-1.0.5-aarch64-apple-darwin.tar.gz"
-    sha256 "f0bb5da5a5332f5b5664b89a9bdb29dd30afad53300c024d0b9025cdd483b30f"
+    url "https://github.com/vrischmann/mytools/releases/download/ansible-password-agent%2Fv2.0.6/ansible-password-agent-2.0.6-aarch64-apple-darwin.tar.gz"
+    sha256 "96797dbf1975246048b54aff7fcdec3e0b990cb72da7d01e7cad111861b75b22"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/vrischmann/mytools/releases/download/v1.0.5/ansible-password-agent-1.0.5-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1bb86b9be8447bf3c9814eaa561a47b46117b423501b3cb5a03537210749203e"
+      url "https://github.com/vrischmann/mytools/releases/download/ansible-password-agent%2Fv2.0.6/ansible-password-agent-2.0.6-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "fa0a412b468a44915d99c9538534093120cf6b7126a000343716adddf94149b7"
     end
   end
 
