@@ -1,17 +1,40 @@
-# Vrischmann Tasks
+# homebrew-tap
+
+Personal [Homebrew tap](https://docs.brew.sh/Taps) for distributing CLI tools and utilities via Homebrew.
+
+## Available formulae
+
+| Formula | Description |
+| --- | --- |
+| `ansible-password-agent` | Secure credential provider for Ansible vault and become passwords, backed by a local agent that caches secrets in the kernel keyring |
+| `llm-context` | CLI tool for gathering file contents into formatted messages for LLM conversations |
 
 ## How do I install these formulae?
 
-`brew install vrischmann/tasks/<formula>`
+```
+brew install vrischmann/tasks/<formula>
+```
 
-Or `brew tap vrischmann/tasks` and then `brew install <formula>`.
+Or tap the repository first, then install:
 
-Or, in a `brew bundle` `Brewfile`:
+```
+brew tap vrischmann/tasks
+brew install <formula>
+```
+
+In a `brew bundle` `Brewfile`:
 
 ```ruby
 tap "vrischmann/tasks"
 brew "<formula>"
 ```
+
+## CI
+
+This tap uses Homebrew's standard CI workflows:
+
+- **`brew test-bot`** runs on every push to `main` and on pull requests (Ubuntu 22.04, macOS 13, macOS 15). It checks formula syntax and, on PRs, runs the full test suite.
+- **`brew pr-pull`** publishes bottled binaries when a PR is labeled `pr-pull`.
 
 ## Documentation
 
