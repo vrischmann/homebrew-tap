@@ -6,7 +6,6 @@ Personal [Homebrew tap](https://docs.brew.sh/Taps) for distributing CLI tools an
 
 | Formula | Description |
 | --- | --- |
-| `ansible-password-agent` | Secure credential provider for Ansible vault and become passwords, backed by a local agent that caches secrets in the kernel keyring |
 | `llm-context` | CLI tool for gathering file contents into formatted messages for LLM conversations |
 
 ## How do I install these formulae?
